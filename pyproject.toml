@@ -1,0 +1,74 @@
+[tool.logging]
+version = 1
+incremental = true
+
+[tool.logging.formatters.formatter]
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+default_time_format = "%H:%M:%S"
+
+[tool.logging.root]
+# The root logger level holds for every module that doesn't have its own level.
+level = "WARNING"
+
+[tool.logging.loggers."__main__"]
+# The special module __main__ is the script currently being executed.
+level = "DEBUG"
+
+[tool.logging.loggers."stnu.algorithms.rte_star"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.logging.loggers."experiments.aaai25_experiments.run_proactive_approach"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."experiments.aaai25_experiments.run_stnu_approach"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."temporal_networks.rte_star"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.logging.loggers."experiments.aaai25_experiments.run_robust_approach"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."experiments.aaai25_experiments.run_reactive_approach_warmstart"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."experiments.aaai25_experiments.run_reactive_approach"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."stnu.algorithms.call_java_cstnu_tool"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.logging.loggers."scheduling_methods.stnu_method"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "DEBUG"
+
+[tool.logging.loggers."stnu.java_comparison"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.logging.loggers."rcpsp.solvers.check_feasibility"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.logging.loggers."rcpsp_max.solvers.RCPSP_MIP_benchmark"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "INFO"
+
+[tool.logging.loggers."classes.stnu"]
+# Module names containing dots must be fully enclosed in quotes.
+level = "WARNING"
+
+[tool.cstnutool]
+# The location of the CSTNUTool JAR file to run. If not specified, we will look for CSTNU-Tool.jar in the project root.
+#jar_location = "/Users/kimvandenhouten/Documents/PhD/Repositories/CstnuTool-4.12-ai4b.io/CSTNU-Tool-4.12-ai4b.io.jar"
+jar_location = "temporal_networks/cstnu_tool/CSTNU-Tool-4.12-ai4b.io-2.jar"
+# Location of logging properties to use when running the CSTNUTool
+logging_properties = "temporal_networks/cstnu_tool/logging.properties"

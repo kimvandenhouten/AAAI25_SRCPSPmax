@@ -1,6 +1,9 @@
 # stochasticRCPSPmax
-This repository implements a proactive, a reactive, and a hybrid approach for stochastic RCPSP/max. It uses state-of-the-art techniques from Constraint Programming (CP) and Simple Temporal Networks with Uncertainty (STNUs).  
+This repository contains the implementation of:
 
+Van den Houten, K., Planken, L., Freydell, E., Tax, D. M., & De Weerdt, M. (2025, April). Proactive and reactive constraint programming for stochastic project scheduling with maximal time-lags. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 25, pp. 26534-26541).   
+
+This repository implements a proactive, a reactive, and a hybrid approach for stochastic RCPSP/max. It uses state-of-the-art techniques from Constraint Programming (CP) and Simple Temporal Networks with Uncertainty (STNUs).
 
 ## Installation and practical issues
 From a terminal session:
